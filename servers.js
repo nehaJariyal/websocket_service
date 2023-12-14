@@ -17,5 +17,5 @@ server.on('upgrade', (request, socket, head) => {
 const PORT = process.env.PORT;
 
 server.listen(PORT, () => {
-  logger.log(`WebSocket server is listening on port ${PORT}`);
+  logger.info(`WebSocket server is listening on port ${PORT}`);
 });
