@@ -14,7 +14,7 @@ function handleWebSocketConnection(ws) {
       const newMessage = await saveMessageDatabase(message);
       storeMessageRedis(message);
     } catch (error) {
-      logg.error('Error handling WebSocket message:', error);
+      logger.error('Error handling WebSocket message:', error);
     }
   });
 
